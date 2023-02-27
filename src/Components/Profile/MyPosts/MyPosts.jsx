@@ -1,26 +1,26 @@
 import React from "react";
-import s from './Profile.module.css'
+import Posts from "./Posts/Posts";
 
-const Profile = ()=>{
+const MyPosts = ()=>{
     return(
-        <div className={s.content}>
-            <div>
-                <img
-                    src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQckesZ1JqeQ1cr4rubOQXKm9s-jELBiUToeQ&usqp=CAU'}/>
-            </div>
-            <div>ava + description</div>
+        <div>
             <div>
                 My post
                 <div>
-                    New post
-                </div>
-                <div className={s.item}>
-                    <div>Post 1</div>
-                    <div>Post 2</div>
-                </div>
+                    <div>
+                        <textarea></textarea>
+                    </div>
+                    <div>
+                        <button>Add post</button>
+                    </div>
+                    </div>
+
+              <Posts/>
+              <Posts/>
+
             </div>
         </div>
     )
 }
 
-export default Profile
+export default MyPosts
