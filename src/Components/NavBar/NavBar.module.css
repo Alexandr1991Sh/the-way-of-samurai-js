@@ -1,0 +1,10 @@
+.nav {
+    grid-area: n;
+    background-color: aquamarine;
+    color: blue;
+}
+
+.active{
+    color: gold;
+    font-size: 25px;
+}
