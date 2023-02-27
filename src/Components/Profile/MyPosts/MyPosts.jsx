@@ -15,8 +15,8 @@ const MyPosts = ()=>{
                     </div>
                     </div>
 
-              <Posts/>
-              <Posts/>
+              <Posts message={'Hi, how are you?'}/>
+              <Posts message={'i am good'}/>
 
             </div>
         </div>
