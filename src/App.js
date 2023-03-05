@@ -10,6 +10,7 @@ import Music from "./Components/Music/Music";
 import Settings from "./Components/Settings/Settings";
 import Friends from "./Components/Friends/Friends";
 import Test from "./Components/Test/Test";
+import {addMessage, updateNewPostMessage} from "./Components/Redux/State";
 
 const App = (props) => {
     return (
@@ -18,11 +19,19 @@ const App = (props) => {
             <Navbar/>
             <div className='app-wrapper-content'>
                 <Routes>
-                    <Route path='/Profile/*' element={<Profile state={props.State.profilePage} addPost={props.addPost}/>}/>
-                    <Route path='/Dialogs/*' element={<Dialogs state={props.State.dialogsPage} />}/>
+                    <Route path='/Profile/*' element={<Profile
+                        profilePage={props.State.profilePage}
+                        addPost={props.addPost}
+                        updateNewPostText={props.updateNewPostText}
+                    />}/>
+                    <Route path='/Dialogs/*' element={<Dialogs
+                        dialogsPage={props.State.dialogsPage}
+                        updateNewPostMessage={props.updateNewPostMessage}
+                        addMessage={props.addMessage}
+                    />}/>
                     <Route path='/News/*' element={<News state={props.State.news}/>}/>
-                    <Route path='/Music/*' element={<Music />}/>
-                    <Route path='/Settings/*' element={<Settings />}/>
+                    <Route path='/Music/*' element={<Music/>}/>
+                    <Route path='/Settings/*' element={<Settings/>}/>
                     <Route path='/Friends/*' element={<Friends state={props.State.friendsPade}/>}/>
                     <Route path='/Test/*' element={<Test state={props.State.testText}/>}/>
                 </Routes>

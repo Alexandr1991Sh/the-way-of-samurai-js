@@ -10,13 +10,15 @@ const State = {
         messages: [
             {id: 1, message: 'Hi'},
             {id: 2, message: 'How are you?'}
-        ]
+        ],
+        newPostMessage: 'i am ok'
     },
     profilePage: {
         posts: [
             {id: 1, message: 'Hi, how are you?', likesCount: 1},
             {id: 2, message: 'i am good', likesCount: 9}
-        ]
+        ],
+        newPostText: 'it-kamasutra.com'
     },
     friendsPade: {
         friend: [
@@ -34,14 +36,34 @@ const State = {
     ]
 }
 
-export let addPost = (postMessage) => {
-    debugger
+export let addPost = () => {
     let newPost = {
         id: 3,
-        message: postMessage,
+        message: State.profilePage.newPostText,
         likesCount: 0
     }
     State.profilePage.posts.push(newPost)
+    State.profilePage.newPostText = ' '
+    rerenderEntireFree(State)
+}
+
+export let updateNewPostText = (newText) => {
+    State.profilePage.newPostText = newText;
+    rerenderEntireFree(State)
+}
+
+export let addMessage = () => {
+    let newMessage = {
+        id: 3,
+        message: State.dialogsPage.newPostMessage
+    }
+    State.dialogsPage.messages.push(newMessage)
+    State.dialogsPage.newPostMessage = ' '
+    rerenderEntireFree(State)
+}
+
+export let updateNewPostMessage = (newMessage) => {
+    State.dialogsPage.newPostMessage = newMessage;
     rerenderEntireFree(State)
 }
 

@@ -2,14 +2,21 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import {BrowserRouter} from "react-router-dom";
 import App from "../App";
-import State, {addPost} from "./Redux/State";
+import State, {addMessage, addPost, updateNewPostMessage, updateNewPostText} from "./Redux/State";
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
 let rerenderEntireFree = () => {
-    const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(
         <React.StrictMode>
             <BrowserRouter>
-                <App State={State} addPost={addPost}/>
+                <App
+                    State={State}
+                    addPost={addPost}
+                    updateNewPostText={updateNewPostText}
+                    updateNewPostMessage={updateNewPostMessage}
+                    addMessage={addMessage}
+                />
             </BrowserRouter>
         </React.StrictMode>
     );
