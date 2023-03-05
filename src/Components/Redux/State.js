@@ -1,5 +1,6 @@
 import React from "react";
-import rerenderEntireFree from "../Render";
+
+let rerenderEntireFree = () =>{}
 
 const State = {
     dialogsPage: {
@@ -65,6 +66,10 @@ export let addMessage = () => {
 export let updateNewPostMessage = (newMessage) => {
     State.dialogsPage.newPostMessage = newMessage;
     rerenderEntireFree(State)
+}
+
+export const subscribe = (observer) =>{
+    rerenderEntireFree = observer
 }
 
 export default State

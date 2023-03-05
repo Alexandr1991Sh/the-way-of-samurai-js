@@ -1,12 +1,31 @@
 import React from 'react';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import State from "./Components/Redux/State";
-import rerenderEntireFree from "./Components/Render";
+import State, {addMessage, addPost, subscribe, updateNewPostMessage, updateNewPostText} from "./Components/Redux/State";
+import ReactDOM from "react-dom/client";
+import {BrowserRouter} from "react-router-dom";
+import App from "./App";
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-
+let rerenderEntireFree = (State) => {
+    root.render(
+        <React.StrictMode>
+            <BrowserRouter>
+                <App
+                    State={State}
+                    addPost={addPost}
+                    updateNewPostText={updateNewPostText}
+                    updateNewPostMessage={updateNewPostMessage}
+                    addMessage={addMessage}
+                />
+            </BrowserRouter>
+        </React.StrictMode>
+    );
+}
 rerenderEntireFree(State)
+subscribe(rerenderEntireFree)
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
