@@ -1,10 +1,11 @@
 import React from "react";
-import s from './News.module.css'
+import NewsItem from "./NewsItem/NewsItem";
 
-const News = ()=>{
+const News = (props)=>{
+let news = props.state.map(n=><NewsItem name={n.name}/>)
     return(
       <div>
-          News
+          {news}
       </div>
     )
 }
