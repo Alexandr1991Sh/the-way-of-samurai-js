@@ -10,7 +10,6 @@ import Music from "./Components/Music/Music";
 import Settings from "./Components/Settings/Settings";
 import Friends from "./Components/Friends/Friends";
 import Test from "./Components/Test/Test";
-import {addMessage, updateNewPostMessage} from "./Components/Redux/State";
 
 const App = (props) => {
     return (
