@@ -14,10 +14,7 @@ let rerenderEntireFree = () => {
             <BrowserRouter>
                 <App
                     State={store.getState()}
-                    addPost={store.addPost.bind(store)}
-                    updateNewPostText={store.updateNewPostText.bind(store)}
-                    updateNewPostMessage={store.updateNewPostMessage.bind(store)}
-                    addMessage={store.addMessage.bind(store)}
+                    dispatch={store.dispatch.bind(store)}
                 />
             </BrowserRouter>
         </React.StrictMode>

@@ -3,21 +3,26 @@ import s from './Dialogs.module.css'
 import Messages from "../Messages/Messages";
 import DialogItem from "../DialogsItem/DialogItem";
 
+let addMessageActionCreator = () => {
+    return {type: 'ADD_MESSAGE'}
+}
+
+let updateNewPostMessageActionCreator = (text) => {
+    return {type: 'UPDATE_NEW_POST_MESSAGE', newMessage: text }
+}
+
 const Dialogs = (props) => {
-
     let dialogs = props.dialogsPage.dialogs.map(d => <DialogItem name={d.name} id={d.id}/>)
-
     let messages = props.dialogsPage.messages.map(m => <Messages message={m.message} id={m.id}/>)
-
     let newPostElement = React.createRef()
 
-    let addPost = () => {
-        props.addMessage()
+    let addMessage = () => {
+        props.dispatch(addMessageActionCreator())
     }
 
     let onMessageChange = () => {
         let text = newPostElement.current.value
-        props.updateNewPostMessage(text)
+        props.dispatch(updateNewPostMessageActionCreator(text))
     }
 
     return (
@@ -31,7 +36,7 @@ const Dialogs = (props) => {
                     ref={newPostElement}
                 /></div>
                 <div>
-                    <button onClick={addPost}>addPost</button>
+                    <button onClick={addMessage}>addMessage</button>
                 </div>
             </div>
             <div className={s.messages}>
