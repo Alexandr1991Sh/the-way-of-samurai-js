@@ -29,7 +29,10 @@ const App = (props) => {
                     <Route path='/News/*' element={<News state={props.State.news}/>}/>
                     <Route path='/Music/*' element={<Music/>}/>
                     <Route path='/Settings/*' element={<Settings/>}/>
-                    <Route path='/Friends/*' element={<Friends state={props.State.friendsPade}/>}/>
+                    <Route path='/Friends/*' element={<Friends
+                        state={props.State.friendsPade}
+                        dispatch={props.dispatch}
+                    />}/>
                     <Route path='/Test/*' element={<Test state={props.State.testText}/>}/>
                 </Routes>
             </div>
