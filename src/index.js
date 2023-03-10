@@ -4,7 +4,7 @@ import reportWebVitals from './reportWebVitals';
 import ReactDOM from "react-dom/client";
 import {BrowserRouter} from "react-router-dom";
 import App from "./App";
-import store from "./Components/Redux/State";
+import store from "./Components/Redux/redux-store";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -14,14 +14,17 @@ let rerenderEntireFree = () => {
             <BrowserRouter>
                 <App
                     State={store.getState()}
-                    dispatch={store.dispatch.bind(store)}
+                     dispatch={store.dispatch.bind(store)}
                 />
             </BrowserRouter>
         </React.StrictMode>
     );
 }
 rerenderEntireFree(store.getState())
-store.subscribe(rerenderEntireFree)
+store.subscribe(()=>{
+    let state = store.getState()
+    rerenderEntireFree(state)
+})
 
 
 // If you want to start measuring performance in your app, pass a function

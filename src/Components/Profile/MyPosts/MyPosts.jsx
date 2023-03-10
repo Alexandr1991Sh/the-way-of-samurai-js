@@ -6,6 +6,7 @@ import {addPostActionCreator, updateNewPostTextActionCreator} from "../../Redux/
 const MyPosts = (props) => {
     let postsElements = props.posts.map(p => <Posts message={p.message} likesCount={p.likesCount}/>)
     let newPostElement = React.createRef()
+
     let addPost = () => {
         props.dispatch(addPostActionCreator())
     }
