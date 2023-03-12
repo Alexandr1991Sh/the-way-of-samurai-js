@@ -13,6 +13,7 @@ let rerenderEntireFree = () => {
         <React.StrictMode>
             <BrowserRouter>
                 <App
+                    store={store}
                     State={store.getState()}
                      dispatch={store.dispatch.bind(store)}
                 />
