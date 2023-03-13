@@ -10,9 +10,9 @@ import Settings from "./Components/Settings/Settings";
 import Friends from "./Components/Friends/Friends";
 import Test from "./Components/Test/Test";
 import DialogsContainer from "./Components/Dialogs/DialogsContainer";
-import Dialogs from "./Components/Dialogs/Dialogs";
+import store from "./Components/Redux/Store";
 
-const App = (props) => {
+const App = () => {
     return (
         <div className={'app-wrapper'}>
             <Header/>
@@ -20,23 +20,23 @@ const App = (props) => {
             <div className='app-wrapper-content'>
                 <Routes>
                     <Route path='/Profile/*' element={<Profile
-                        store={props.store}
+                        // store={props.store}
                         // profilePage={props.State.profilePage}
                         // dispatch={props.dispatch}
                     />}/>
                     <Route path='/Dialogs/*' element={<DialogsContainer
-                        store={props.store}
+                        // store={props.store}
                         // dialogsPage={props.State.dialogsPage}
                         // dispatch={props.dispatch}
                     />}/>
-                    <Route path='/News/*' element={<News state={props.State.news}/>}/>
+                    <Route path='/News/*' element={<News state={store._State.news}/>}/>
                     <Route path='/Music/*' element={<Music/>}/>
                     <Route path='/Settings/*' element={<Settings/>}/>
                     <Route path='/Friends/*' element={<Friends
-                        state={props.State.friendsPade}
-                        dispatch={props.dispatch}
+                        state={store._State.friendsPade}
+                        dispatch={store._State.dispatch}
                     />}/>
-                    <Route path='/Test/*' element={<Test state={props.State.testText}/>}/>
+                    <Route path='/Test/*' element={<Test state={store._State.testText}/>}/>
                 </Routes>
             </div>
         </div>
