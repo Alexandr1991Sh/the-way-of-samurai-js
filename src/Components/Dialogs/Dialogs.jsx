@@ -6,8 +6,8 @@ import DialogItem from "../DialogsItem/DialogItem";
 
 const Dialogs = (props) => {
     let state = props.dialogsPage
-    let dialogs = state.dialogs.map(d => <DialogItem name={d.name} id={d.id}/>)
-    let messages = state.messages.map(m => <Messages message={m.message} id={m.id}/>)
+    let dialogs = state.dialogs.map(d => <DialogItem key={d.id} name={d.name} id={d.id}/>)
+    let messages = state.messages.map(m => <Messages key={m.id} message={m.message} id={m.id}/>)
     let newPostElement = React.createRef()
 
     let onSendMessageClick = () => {

@@ -30,6 +30,9 @@ const Navbar = ()=>{
             <div className={s.item}>
                 <NavLink to='/Test' className={({ isActive }) => isActive ? s.active : s.item }>Test</NavLink>
             </div>
+            <div className={s.item}>
+                <NavLink to='/Users' className={({ isActive }) => isActive ? s.active : s.item }>Users</NavLink>
+            </div>
         </nav>
     )
 }

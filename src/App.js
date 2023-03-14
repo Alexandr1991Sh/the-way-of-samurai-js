@@ -11,6 +11,9 @@ import Friends from "./Components/Friends/Friends";
 import Test from "./Components/Test/Test";
 import DialogsContainer from "./Components/Dialogs/DialogsContainer";
 import store from "./Components/Redux/Store";
+import Users from "./Components/Users/users";
+import UsersContainer from "./Components/Users/UsersContainer";
+import MusicContainer from "./Components/Music/MusicContainer";
 
 const App = () => {
     return (
@@ -30,13 +33,14 @@ const App = () => {
                         // dispatch={props.dispatch}
                     />}/>
                     <Route path='/News/*' element={<News state={store._State.news}/>}/>
-                    <Route path='/Music/*' element={<Music/>}/>
+                    <Route path='/Music/*' element={<MusicContainer/>}/>
                     <Route path='/Settings/*' element={<Settings/>}/>
                     <Route path='/Friends/*' element={<Friends
                         state={store._State.friendsPade}
                         dispatch={store._State.dispatch}
                     />}/>
                     <Route path='/Test/*' element={<Test state={store._State.testText}/>}/>
+                    <Route path='/Users/*' element={<UsersContainer/>}/>
                 </Routes>
             </div>
         </div>
