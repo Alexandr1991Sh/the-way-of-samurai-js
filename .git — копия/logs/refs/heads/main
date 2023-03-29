@@ -1,0 +1,21 @@
+0000000000000000000000000000000000000000 7f107092c9b9456479fcc9ada34fedf4568c451c Alexandr1991Sh <an1991sh@yandex.ru> 1677268295 +0300	commit (initial): Initialize project using Create React App
+7f107092c9b9456479fcc9ada34fedf4568c451c e636b2c0a74eb2295167f87847dc6ac54bb304f9 Alexandr1991Sh <an1991sh@yandex.ru> 1677496155 +0300	commit: css- module
+e636b2c0a74eb2295167f87847dc6ac54bb304f9 e636b2c0a74eb2295167f87847dc6ac54bb304f9 Alexandr1991Sh <an1991sh@yandex.ru> 1677496164 +0300	Branch: renamed refs/heads/master to refs/heads/main
+e636b2c0a74eb2295167f87847dc6ac54bb304f9 b2541988a8af6ad22bd687c16482ad20245b4f2d Alexandr1991Sh <an1991sh@yandex.ru> 1677507498 +0300	commit: 15 урок
+b2541988a8af6ad22bd687c16482ad20245b4f2d c3f08342c10134ce5040bd2c57a901f4c8d5bfad Alexandr1991Sh <an1991sh@yandex.ru> 1677507637 +0300	commit: 15 Урок
+c3f08342c10134ce5040bd2c57a901f4c8d5bfad df7f7e844c0ff9b9cacd0712eb0d06a84751f828 Alexandr1991Sh <an1991sh@yandex.ru> 1677513280 +0300	commit: 16 Урок props
+df7f7e844c0ff9b9cacd0712eb0d06a84751f828 875fcb6e0ec1e00e1a3b37ac1c4f081a2663fbb3 Alexandr1991Sh <an1991sh@yandex.ru> 1677583092 +0300	commit: 19 Урок. route, browser-router
+875fcb6e0ec1e00e1a3b37ac1c4f081a2663fbb3 81d4134a81681f165d6e99402ff75b02c88ef093 Alexandr1991Sh <an1991sh@yandex.ru> 1677589701 +0300	commit: 20 Урок. NavLink
+81d4134a81681f165d6e99402ff75b02c88ef093 1ce13cbf9cba83836e26361ca8076fa0a4ebb28e Alexandr1991Sh <an1991sh@yandex.ru> 1677597735 +0300	commit: 21 Урок. Верстаем страницу Диалогов)
+1ce13cbf9cba83836e26361ca8076fa0a4ebb28e 4bce47c1f2367b9477ca945bd9b270a656ce85c9 Alexandr1991Sh <an1991sh@yandex.ru> 1677607034 +0300	commit: 23 Урок. props для Диалогов
+4bce47c1f2367b9477ca945bd9b270a656ce85c9 daa2624e1f586bba29a04b864a2ffb0d51c17b24 Alexandr1991Sh <an1991sh@yandex.ru> 1677686889 +0300	commit: 25 Урок. метод .map()
+daa2624e1f586bba29a04b864a2ffb0d51c17b24 c06d25952b920af995b82cb2e13a62aa9f446c59 Alexandr1991Sh <an1991sh@yandex.ru> 1678006562 +0300	commit: 33Урок. добавляем пост на стену
+c06d25952b920af995b82cb2e13a62aa9f446c59 5893c26f632e136a457b7738b7e39b8ce897a88d Alexandr1991Sh <an1991sh@yandex.ru> 1678034362 +0300	commit: 34 Урок. FLUX круговорот на каждый символ
+5893c26f632e136a457b7738b7e39b8ce897a88d 0eef293f70bbe6c827beb15ae8c47eee01834a18 Alexandr1991Sh <an1991sh@yandex.ru> 1678037569 +0300	commit: 35 Урок. callback, subscribe, observer
+0eef293f70bbe6c827beb15ae8c47eee01834a18 9d8b18e3f005da86676c00a7d48017c1c58eff08 Alexandr1991Sh <an1991sh@yandex.ru> 1678103023 +0300	commit: 37 Урок. store, state, ООП, рефакторинг
+9d8b18e3f005da86676c00a7d48017c1c58eff08 eecaf9c8b4e5c00d089aa06d5f9d0b5d0f90b5f1 Alexandr1991Sh <an1991sh@yandex.ru> 1678167644 +0300	commit: 39 Урок. action creator, action type
+eecaf9c8b4e5c00d089aa06d5f9d0b5d0f90b5f1 7b109000a0f732faf52e8286c4157df3c65220f3 Alexandr1991Sh <an1991sh@yandex.ru> 1678290011 +0300	commit: 41 Урок. Практика - reducer (почти redux)
+7b109000a0f732faf52e8286c4157df3c65220f3 bb8def5c815cd0bd0a279e453be634b40ffa46bd Alexandr1991Sh <an1991sh@yandex.ru> 1678459671 +0300	commit: 42 Урок. Практика redux
+bb8def5c815cd0bd0a279e453be634b40ffa46bd 2bd26059110b32dad5b08aad6252283b2a67814f Alexandr1991Sh <an1991sh@yandex.ru> 1678619958 +0300	commit: 43 Урок. container component
+2bd26059110b32dad5b08aad6252283b2a67814f 8ea3cda381d67ce2b15aba192622d73d6ea52b55 Alexandr1991Sh <an1991sh@yandex.ru> 1678701483 +0300	commit: 45 Урок. connect
+8ea3cda381d67ce2b15aba192622d73d6ea52b55 eae32318c9d2674adab0bf26bb41f0ffbee86647 Alexandr1991Sh <an1991sh@yandex.ru> 1678807815 +0300	commit: 49 Урок. создаём страницу пльзователей. 51 Урок. Users API
