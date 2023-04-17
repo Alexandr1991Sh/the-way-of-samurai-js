@@ -6,8 +6,8 @@ let news = props.state.map(n=><NewsItem name={n.name}/>)
     return(
       <div>
           {news}
-      </div>
+         </div>
     )
-}
+}   
 
 export default News
